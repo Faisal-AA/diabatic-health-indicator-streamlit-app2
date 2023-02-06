@@ -37,7 +37,7 @@ with st.spinner("Loading Model"):
     xgboost = load_models()
 
 st.write("This is the app for predicting whether a person is diabetic or not depending upon the input features.")
-st.caption0('''This project is made with love by FMA-group fro UJ university, Data Science section.\n
+st.caption('''This project is made with love by FMA-group fro UJ university, Data Science section.\n
 Team members: Faisal Alzahrani, Mohammed Al-khathami, Anas  Al-Salami\n''')
 st.header('Please answare the following questions')
 
