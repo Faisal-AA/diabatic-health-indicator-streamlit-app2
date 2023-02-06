@@ -63,7 +63,19 @@ MentHlth = st.number_input('On scale of 0-30, how many days you felt good about 
 PhysHlth = st.number_input('On scale of 0-30, how many days you felt good about your physical health in the past 30 days?', value=15,min_value=0,max_value=30,step=1,help="Scale: 0-30")
 DiffWalk = st.number_input('Do you have any walking difficulty?', value=1,min_value=0,max_value=1,step=1,help="Please enter 1 for 'Yes' and 0 for 'No'")
 Sex = st.number_input('What is your gender?', value=0,min_value=0,max_value=1,step=1,help="Please enter 1 for 'Male' and 0 for 'Female'")
-Age = st.number_input('In what category is your age? (1 = 18-24 ,9 = 60-64 ,13 = 80 or older)',value= 9,min_value=1,max_value=13,step=1,help="Scale:1-13")
+Age = st.number_input('In what category is your age? (1 = 18-24 ,9 = 60-64 ,13 = 80 or older)',value= 9,min_value=1,max_value=13,step=1,help='''1 Age 18 to 24\n
+2 Age 25 to 29\n
+3 Age 30 to 34\n
+4 Age 35 to 39\n
+5 Age 40 to 44\n
+6 Age 45 to 49\n
+7 Age 50 to 54\n
+8 Age 55 to 59\n
+9 Age 60 to 64\n
+10 Age 65 to 69\n
+11 Age 70 to 74\n
+12 Age 75 to 79\n
+13 Age 80 or older''')
 Education = st.number_input('On scale of 1-6, in what level is your education?', value=4,min_value=1,max_value=6,step=1,help='''1 = Never attended school or only kindergarten \n
 2 = Grades 1 through 8 (Elementary) \n
 3 = Grades 9 through 11 (Some high school) \n
@@ -71,10 +83,14 @@ Education = st.number_input('On scale of 1-6, in what level is your education?',
 5 = College 1 year to 3 years (Some college or technical school) \n
 6 = College 4 years or more (College graduate)\n
 Scale:1-6''')
-Income = st.number_input('On scale of 1-8, in what level is you income?',value= 3,min_value=1,max_value=8,step=1,help='''1 = less than $10,000 \n 
-5 = less than $35,000 \n 
-8 = $75,000 or more \n 
-Scale: 1-8''')
+Income = st.number_input('On scale of 1-8, in what level is you income?',value= 3,min_value=1,max_value=8,step=1,help='''1= Less than $10,000
+2= Less than $15,000 ($10,000 to less than $15,000)\n
+3= Less than $20,000 ($15,000 to less than $20,000)\n
+4= Less than $25,000 ($20,000 to less than $25,000)\n
+5= Less than $35,000 ($25,000 to less than $35,000)\n
+6= Less than $50,000 ($35,000 to less than $50,000)\n
+7= Less than $75,000 ($50,000 to less than $75,000)\n
+8= $75,000 or more''')
 
 l = [[HighBP, HighChol,CholCheck, Bmi, Smoker,Stroke,HeartDiseaseorAttack, PhysActivity, Fruits, Veggies,
         HvyAlcoholConsump,AnyHealthcare,NoDocbcCost,GenHlth, MentHlth, PhysHlth, DiffWalk, Sex, Age, Education,Income]]
