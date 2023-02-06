@@ -37,14 +37,15 @@ with st.spinner("Loading Model"):
     xgboost = load_models()
 
 st.write("This is the app for predicting whether a person is diabetic or not depending upon the input features.")
-
-st.header('Input Data')
+st.caption("This project is done with love by FMA-group fro UJ university, Data Science section.\n
+Team members: Faisal Alzahrani, Mohammed Al-khathami, Anas  Al-Salami\n")
+st.header('Please answare the following questions')
 
 
 input_dataframe = None
 
 
-st.caption("Enter the value of features below")
+st.caption("If you needed any help, see the '?' sign above each question.")
 HighBP = st.number_input('Do you have a high blood preasure?', value=1,min_value=0,max_value=1,step=1,help="Please enter 1 for 'Yes' and 0 for 'No'")
 HighChol = st.number_input('Do you have a high cholesterol?', value=1,min_value=0,max_value=1,step=1,help="Please enter 1 for 'Yes' and 0 for 'No'")
 CholCheck = st.number_input('Did you check your cholestrol in the past 5 years?', value=1, min_value=0,max_value=1,step=1,help="Please enter 1 for 'Yes' and 0 for 'No'")
